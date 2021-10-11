@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/script.js" defer ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
+    <main>
+      <form id="settings">
+        <div>
+          <label for="player-number">Number of players: </label>
+          <select id="player-number" name="player-number" autocomplete="off">
+            <option value="one">1P</option>
+            <option value="two" selected >2P</option>
+          </select>
+        </div>
+        <label id="player-1-label" for="player1-name">Player 1 name</label>
+        <input id="player-1-name" type="text" name="player-1-name" placeholder="Player 1" required />
+        <label id="player-2-label" for="player2-name">Player 2 name</label>
+        <input id="player-2-name" type="text" name="player-2-name" placeholder="Player 2" required />
+        <input id="submit" type="submit" value="Start / Restart" />
+      </form>
+
+      <div class="wrap">
+        <div id="winner">&nbsp;</div>
+        <div class="gameboard">
+          <div id="box0"></div>
+          <div id="box1"></div>
+          <div id="box2"></div>
+          <div id="box3"></div>
+          <div id="box4"></div>
+          <div id="box5"></div>
+          <div id="box6"></div>
+          <div id="box7"></div>
+          <div id="box8"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
